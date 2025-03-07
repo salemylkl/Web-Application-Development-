@@ -1,17 +1,89 @@
-.navbar ul {
-  list-style-type: none;
-  background-color: grey;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: #000;
+}
+
+nav h1 {
+  font-size: 35px;
+  /* gap: 20px; */
+}
+
+nav ul {
+  display: flex;
+  gap: 5px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  color: #b41919;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 7px 8px;
+  transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+  background-color: #00891b;
+  transition: 0.5s ease;
+}
+
+nav ul li a.active {
+  background-color: #00891b;
+}
+
+.text-box-outer {
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+}
+
+.text-box {
+  background-color: white; /* Makes the box white */
+  padding: 20px; /* Adds space inside the box */
+  border: 1px solid #ccc; /* Adds a light border around the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for a 3D effect */
+  width: 300px; /* Sets the width of the box */
+  margin: 20px auto; /* Centers the box */
+}
+
+.text-box p {
+  margin: 0; /* Removes margin around the text */
+  font-size: 16px; /* Adjusts the font size */
+}
+
+/* .navbar ul {
+  list-style: none;
+  background-color: grey; 
+  padding: 0px 5px;
   margin: 0px;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .navbar a {
-  color: grey;
-  text-decoration: none;
-  padding: 15px;
-  display: block;
-  text-align: center;
+  color: grey; 
+  text-decoration: none; 
+  padding: 15px; 
+  display: block; 
+  /text-align: center; 
 }
 
 .navbar a:hover {
@@ -19,5 +91,5 @@
 }
 
 .navbar li {
-  float: left;
-}
+  float: right;
+}  */

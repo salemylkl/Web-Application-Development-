@@ -1,18 +1,118 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Application Development</title>
- <!--<link rel="stylesheet" href="style.css" /> -->   
+    <title>Quid Pro Quo - Search & Listings</title>
   </head>
   <body>
-    <nav class="navbar">
-      <input type="text" placeholder="Search..." />
-      <li><a href="index.html"> Home </a></li>
-      <li><a href="#"> Search & Listings </a></li>
-      <li><a href="dashboard.html"> Dashboard </a></li>
-      <li><a href="about_us.html"> About Us </a></li>
+    <nav class="header">
+      <h1>Logo</h1>
+
+      <div class="Sign-Up-Buttons">
+        <a href="" signup.html>
+          <button class="Sign-up">Sign Up | Log In</button>
+        </a>
+        <a href="help_page.html"> <button class="Help">?</button> </a>
+      </div>
+
+      <br />
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Search & Listings</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+      </ul>
     </nav>
+
+    <br /><br />
+
+    <section class="search-section">
+      <h2>Find Skills to Learn</h2>
+      <input type="text" placeholder="Search for a skill..." name="search" />
+      <button type="submit">Search</button>
+    </section>
+
+    <section class="filters">
+      <h3>Filter by:</h3>
+
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="languages">Languages</option>
+        <option value="coding">Coding</option>
+        <option value="music">Music</option>
+      </select>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" placeholder="Enter city or online" />
+
+      <label for="skill-level">Skill Level:</label>
+      <select id="skill-level">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <label for="sort-by">Sort by:</label>
+      <select id="sort-by">
+        <option value="relevance">Relevance</option>
+        <option value="date">Newest</option>
+        <option value="rating">Highest Rated</option>
+      </select>
+
+      <button type="submit">Apply Filters</button>
+    </section>
+
+    <br /><br />
+
+    <section class="search-results">
+      <h2>Search Results</h2>
+
+      <div class="result-item">
+        <img src="user1.jpg" alt="User 1 Profile Picture" width="50" />
+        <p><strong>John Doe</strong> - Offers: <em>Spanish Tutoring</em></p>
+        <p>Skill Level: Intermediate | Rating: ⭐⭐⭐⭐☆</p>
+        <button>View Profile</button>
+        <button>Request Exchange</button>
+      </div>
+
+      <div class="result-item">
+        <img src="user2.jpg" alt="User 2 Profile Picture" width="50" />
+        <p><strong>Jane Smith</strong> - Offers: <em>Python Programming</em></p>
+        <p>Skill Level: Advanced | Rating: ⭐⭐⭐⭐⭐</p>
+        <button>View Profile</button>
+        <button>Request Exchange</button>
+      </div>
+
+      <button>Load More Results</button>
+    </section>
+
+    <br />
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <h3>Can't find what you're looking for?</h3>
+      <p>Create your own listing and find a match!</p>
+      <button>Create a Listing</button>
+    </section>
+
+    <br /><br />
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About</a> | <a href="contact.html">Contact</a> |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+      <p>
+        Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+      </p>
+      <hr />
+    </footer>
   </body>
 </html>

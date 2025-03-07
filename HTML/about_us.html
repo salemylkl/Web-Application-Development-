@@ -1,37 +1,72 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Application Development</title>
- <!--<link rel="stylesheet" href="style.css" /> -->   
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Quid Pro Quo</title>
+    <!--<link rel="stylesheet" href="style.css" />-->   
+</head>
+<body>
+
+    <!-- Navigation Bar -->
     <nav class="navbar">
+      <h1>Logo</h1>
       <input type="text" placeholder="Search..." />
-      <li><a href="index.html"> Home </a></li>
-      <li><a href="search.html"> Search & Listings </a></li>
-      <li><a href="dashboard.html"> Dashboard </a></li>
-      <li><a href="#"> About Us </a></li>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search & Listings</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="about_us.html" class="active">About Us</a></li>
+        </ul>
     </nav>
 
+    <!-- Main Content -->
     <div class="container">
-        <h2>Who We Are</h2>
-        <p>Quid Pro Quo is a bartering platform designed to help people exchange goods and services seamlessly. Our goal is to create a fair and efficient marketplace where value is traded directly, without the need for money.</p>
+        <h1>About Quid Pro Quo</h1>
 
-        <h2>Our Mission</h2>
-        <p>We believe in the power of exchange. By enabling people to trade skills and items, we promote sustainability, reduce waste, and build stronger communities.</p>
+        <section>
+            <h2>Who We Are</h2>
+            <p>Quid Pro Quo is a bartering platform designed to help people exchange goods and services seamlessly. Our goal is to create a fair and efficient marketplace where value is traded directly, without the need for money.</p>
+        </section>
 
-        <h2>How It Works</h2>
-        <ul>
-            <li>Create a listing for what you want to offer.</li>
-            <li>Browse available trades from other users.</li>
-            <li>Connect and negotiate a fair exchange.</li>
-            <li>Complete your trade and leave feedback.</li>
-        </ul>
+        <section>
+            <h2>Our Mission</h2>
+            <p>We believe in the power of exchange. By enabling people to trade skills and items, we promote sustainability, reduce waste, and build stronger communities.</p>
+        </section>
+
+        <section>
+            <h2>How It Works</h2>
+            <ul>
+                <li><strong>Create a listing:</strong> Describe what you want to offer.</li>
+                <li><strong>Browse trades:</strong> Explore items and skills others are offering.</li>
+                <li><strong>Connect & negotiate:</strong> Find a match and agree on a fair trade.</li>
+                <li><strong>Complete your trade:</strong> Exchange your item or service and leave feedback.</li>
+            </ul>
+        </section>
+
+        <section class="cta">
+            <h2>Join the Bartering Revolution!</h2>
+            <p>Sign up today and start trading skills and goods with a global community.</p>
+            <a href="signup.html" class="btn">Get Started</a>
+        </section>
     </div>
 
+    <footer>
+        <hr>
+        <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+        <nav>
+            <a href="contact_us.html">Contact</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <hr>
+    </footer>
 
-
-  </body>
+</body>
 </html>
+

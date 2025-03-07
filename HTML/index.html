@@ -3,16 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Application Development</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Quid Pro Quo - Skill Bartering</title>
   </head>
   <body>
-    <nav class="navbar">
-      <input type="text" placeholder="Search..." />
-      <li><a href="#"> Home </a></li>
-      <li><a href="search.html"> Search & Listings </a></li>
-      <li><a href="dashboard.html"> Dashboard </a></li>
-      <li><a href="about_us.html"> About Us </a></li>
+    <nav class="header">
+      <h1>Logo</h1>
+
+      <input
+        type="text"
+        placeholder="Search for New Skills"
+        class="Search-Bar"
+      />
+
+      <div class="Sign-Up-Buttons">
+        <a href="" signup.html>
+          <button class="Sign-up">Sign Up | Log In</button>
+        </a>
+        <a href="help_page.html"> <button class="Help">?</button> </a>
+      </div>
+
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="search.html">Search & Listings</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+      </ul>
     </nav>
+
+    <section class="hero">
+      <h2>Barter Skills, Learn for Free!</h2>
+      <p>Exchange your skills with others and grow together.</p>
+      <a href="search.html" class="btn">Browse Skills</a> <br />
+      <a href="how_it_works.html" class="btn">How It Works?</a>
+    </section>
+
+    <section class="popular-skills">
+      <h3>Popular Skills Right Now</h3>
+      <ul>
+        <li>🎸 Guitar Lessons</li>
+        <li>💻 Web Development</li>
+        <li>🗣️ Spanish Language</li>
+        <li>📷 Photography Basics</li>
+        <li>🧘‍♂️ Yoga & Meditation</li>
+      </ul>
+      <a href="search.html" class="btn">View More</a>
+    </section>
+
+    <section class="testimonials">
+      <h3>What Our Users Say</h3>
+      <blockquote>
+        “I found a great mentor to teach me Python while I taught them guitar.
+        Best experience ever!” – Alex J.
+      </blockquote>
+      <blockquote>
+        “Quid Pro Quo made it easy to exchange skills. I learned Spanish while
+        teaching English!” – Maria L.
+      </blockquote>
+    </section>
+
+    <section class="cta">
+      <h3>Join the Community!</h3>
+      <p>Start bartering skills today and connect with learners worldwide.</p>
+      <a href="signup.html" class="btn">Sign Up Now</a>
+    </section>
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About</a> | <a href="contact.html">Contact</a> |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+      <p>
+        Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+      </p>
+      <hr />
+    </footer>
   </body>
 </html>

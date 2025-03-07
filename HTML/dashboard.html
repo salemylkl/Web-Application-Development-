@@ -1,10 +1,10 @@
-!<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Application Development</title>
-    <!--<link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" /> 
   </head>
   <body>
     <nav class="navbar">
@@ -15,4 +15,120 @@
       <li><a href="about_us.html"> About Us </a></li>
     </nav>
   </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quid Pro Quo Dashboard</title>
+</head>
+<body>
+  <nav class="navbar">
+    <input type="text" placeholder="Search..." />
+    <li><a href="index.html"> Home </a></li>
+    <li><a href="search.html"> Search & Listings </a></li>
+    <li><a href="#"> Dashboard </a></li>
+    <li><a href="about_us.html"> About Us </a></li>
+  </nav>
+
+    <header>
+        <h1>Welcome, [Username]</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#active-exchanges">Active Exchanges</a></li>
+                <li><a href="#offered-skills">My Offered Skills</a></li>
+                <li><a href="#requested-skills">My Requested Skills</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Dashboard Overview</h2>
+            <div class="stats">
+                <p>Skills Offered: <span id="skills-offered">3</span></p>
+                <p>Skills Requested: <span id="skills-requested">2</span></p>
+                <p>Active Exchanges: <span id="active-exchanges-count">1</span></p>
+                <p>Completed Trades: <span id="completed-trades">5</span></p>
+                <p>User Reputation: <span id="user-rating">4.8/5</span></p>
+            </div>
+        </section>
+
+        <section id="active-exchanges">
+            <h2>Active Skill Exchanges</h2>
+
+            <div class="pending-requests">
+                <h3>Pending Requests</h3>
+                <ul>
+                    <li>John Doe wants to trade ""Guitar Lessons""" for ""Graphic Design Help"""
+                        <button>Accept</button> <button>Decline</button>
+                    </li>
+                    <li>Jane Smith requests ""Language Exchange (Spanish-English)""
+                        <button>Accept</button> <button>Decline</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ongoing-exchanges">
+                <h3>Ongoing Exchanges</h3>
+                <ul>
+                    <li>""Coding Lessons for Marketing Help""" (50% completed)</li>
+                    <li>""Yoga Sessions for Photography Tips""" (In Progress)</li>
+                </ul>
+            </div>
+        </section>
+
+      
+        <section id="offered-skills">
+            <h2>My Offered Skills</h2>
+            <ul>
+                <li>Skill: ""Web Development""" (3 requests pending) 
+                    <button>Edit</button> <button>Remove</button>
+                </li>
+                <li>Skill: ""French Language Tutoring""" (Available) 
+                    <button>Edit</button> <button>Remove</button>
+                </li>
+            </ul>
+            <button>Add New Skill</button>
+        </section>
+
+        <section id="requested-skills">
+            <h2>My Requested Skills</h2>
+            <ul>
+                <li>Looking for ""Guitar Lessons""" (1 potential match found)</li>
+                <li>Need help with ""Video Editing""" (No matches yet)</li>
+            </ul>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul>
+                <li>John Doe: "Hey, are you still offering web development lessons?" <button>Reply</button></li>
+            </ul>
+        </section>
+
+        <section id="settings">
+            <h2>Profile & Settings</h2>
+            <p>Username: [Your Name]</p>
+            <a href="profile.html"> <button >Edit Profile</button> </a>
+            <h3>Preferences</h3>
+            <label>
+                <input type="checkbox" checked> Receive Notifications
+            </label>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Quid Pro Quo © 2025. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>

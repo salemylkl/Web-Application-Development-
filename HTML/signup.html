@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Quid Pro Quo</title>
+    <!--<link rel="stylesheet" href="style.css" />-->
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search & Listings</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Create Your Account</h1>
+
+      <form action="process_signup.php" method="POST">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm_password"
+          required
+        />
+
+        <label for="skills">What skills can you offer?</label>
+        <input
+          type="text"
+          id="skills"
+          name="skills"
+          placeholder="e.g., Guitar Lessons, Web Development"
+        />
+
+        <label for="interests">What skills do you want to learn?</label>
+        <input
+          type="text"
+          id="interests"
+          name="interests"
+          placeholder="e.g., Spanish, Graphic Design"
+        />
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+    </div>
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      <nav>
+        <a href="contact_us.html">Contact</a> |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+      <p>
+        Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+      </p>
+      <hr />
+    </footer>
+  </body>
+</html>
