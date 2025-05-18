@@ -1,28 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Profile</title>
-</head>
-<body>
-    <header>
-        <h1>Logo</h1>
-        <h3>Profile</h3>
-        <nav>
-            <a href="dashboard.html">Back to Dashboard</a>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QPQ - Your Profile</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="nav-left">
+        <h1 class="logo">QPQ</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Explore</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="about_us.html">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search skills..."
+            class="Search-Bar"
+          />
+          <button type="button" class="search-button">Search</button>
+        </div>
+        <div class="user-menu">
+          <img src="../Images/david.jpeg" alt="Profile" class="user-avatar" />
+          <span class="user-name">John Doe</span>
+        </div>
+      </div>
+    </nav>
 
-    <section>
-        <h3>Name: John Doe</h3>
-        <h3>Skills Offered: Web Development</h3>
-        <h3>Skills Wanted: Piano Skills</h3>
-        <button>Edit Profile</button>
-    </section>
+    <main>
+      <div class="dashboard-grid">
+        <aside class="dashboard-sidebar">
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="../Images/david.jpeg"
+                alt="Profile"
+                class="profile-image"
+              />
+              <div class="profile-info">
+                <h2>John Doe</h2>
+                <p class="profile-location">San Francisco, CA</p>
+                <div class="profile-rating">★★★★☆ 4.5 (15 reviews)</div>
+              </div>
+            </div>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-value">12</span>
+                <span class="stat-label">Teaching</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">8</span>
+                <span class="stat-label">Learning</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">20</span>
+                <span class="stat-label">Exchanges</span>
+              </div>
+            </div>
+            <button class="btn primary full-width">Edit Profile</button>
+          </div>
+        </aside>
+
+        <div class="dashboard-content">
+          <section class="skills-section">
+            <h3>Skills Offering</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <h4>Web Development</h4>
+                  <span class="skill-type teaching">Teaching</span>
+                </div>
+                <p>Full-stack development with modern frameworks</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="skills-section">
+            <h3>Skills Wanted</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <h4>Piano</h4>
+                  <span class="skill-type learning">Learning</span>
+                </div>
+                <p>Interested in learning classical piano</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Quid Pro Quo</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>QPQ</h4>
+          <p>Empowering people to share knowledge and skills worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon twitter">Twitter</a>
+            <a href="#" class="social-icon facebook">Facebook</a>
+            <a href="#" class="social-icon instagram">Instagram</a>
+            <a href="#" class="social-icon linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

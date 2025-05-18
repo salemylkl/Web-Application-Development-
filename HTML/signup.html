@@ -3,83 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up - Quid Pro Quo</title>
-    <!--<link rel="stylesheet" href="style.css" />-->
+    <title>QPQ - Sign Up</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
-    <h1>Logo</h1>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="search.html">Search & Listings</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-      </ul>
+    <nav class="header">
+      <div class="nav-left">
+        <h1 class="logo">QPQ</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Explore</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="about_us.html">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search skills..."
+            class="Search-Bar"
+          />
+          <button type="button" class="search-button">Search</button>
+        </div>
+        <a href="login.html" class="Sign-up">Sign In</a>
+      </div>
     </nav>
 
-    <div class="container">
-      <h1>Create Your Account</h1>
+    <main>
+      <div class="auth-container">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h2>Create Your Account</h2>
+            <p>Join our community and start your learning journey</p>
+          </div>
 
-      <form>
-        <label for="full-name">Full Name:</label>
-        <input type="text" id="full-name" name="full_name" required />
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
 
-        <br />
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                required
+              />
+            </div>
 
-        <br />
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
+            <div class="form-group">
+              <label for="skills">Skills You Can Teach</label>
+              <input
+                type="text"
+                id="skills"
+                placeholder="e.g., Guitar Lessons, Web Development"
+              />
+            </div>
 
-        <br />
+            <div class="form-group">
+              <label for="interests">Skills You Want to Learn</label>
+              <input
+                type="text"
+                id="interests"
+                placeholder="e.g., Spanish, Graphic Design"
+              />
+            </div>
 
-        <label for="confirm-password">Confirm Password:</label>
-        <input
-          type="password"
-          id="confirm-password"
-          name="confirm_password"
-          required
-        />
+            <button type="submit" class="btn primary full-width">
+              Create Account
+            </button>
 
-        <br />
+            <div class="auth-divider">
+              <span>or sign up with</span>
+            </div>
 
-        <label for="skills">What skills can you offer?</label>
-        <input
-          type="text"
-          id="skills"
-          name="skills"
-          placeholder="e.g., Guitar Lessons, Web Development"
-        />
+            <div class="social-auth">
+              <button class="btn secondary social-btn">
+                <img src="../Images/icons/google.svg" alt="Google" />
+                Google
+              </button>
+              <button class="btn secondary social-btn">
+                <img src="../Images/icons/github.svg" alt="GitHub" />
+                GitHub
+              </button>
+            </div>
+          </form>
 
-        <br />
-
-        <label for="interests">What skills do you want to learn?</label>
-        <input
-          type="text"
-          id="interests"
-          name="interests"
-          placeholder="e.g., Spanish, Graphic Design"
-        />
-
-        <br>
-
-        <button type="submit">Sign Up</button>
-      </form>
-
-      <p>Already have an account? <a href="login.html">Log in here</a>.</p>
-    </div>
+          <p class="auth-footer">
+            Already have an account? <a href="login.html">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </main>
 
     <footer>
-      <hr />
-      <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
-      <p>
-        Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
-        <a href="#">Instagram</a>
-      </p>
-      <hr />
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>QPQ</h4>
+          <p>Empowering people to share knowledge and skills worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon twitter">Twitter</a>
+            <a href="#" class="social-icon facebook">Facebook</a>
+            <a href="#" class="social-icon instagram">Instagram</a>
+            <a href="#" class="social-icon linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>

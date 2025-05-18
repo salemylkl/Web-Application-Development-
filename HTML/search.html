@@ -3,111 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quid Pro Quo - Search & Listings</title>
+    <title>QPQ - Search & Listings</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/search.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- Navigation (Unified) -->
     <nav class="header">
-      <h1>Logo</h1>
-
-      <div class="Sign-Up-Buttons">
-        <a href="signup.html">
-          <button class="Sign-up">Sign Up | Log In</button>
-        </a>
-        <!-- <a href="help_page.html"> <button class="Help">?</button> </a> -->
+      <div class="nav-left">
+        <h1 class="logo">QPQ</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html" class="active">Search & Listings</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+        </ul>
       </div>
-
-      <br />
-
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Search & Listings</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-      </ul>
+      <div class="nav-right">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search skills..."
+            class="Search-Bar"
+          />
+          <button type="button" class="search-button">Search</button>
+        </div>
+        <a href="login.html" class="Sign-up">Sign Up / Log In</a>
+      </div>
     </nav>
 
-    <br /><br />
+    <!-- Main Content -->
+    <main>
+      <div class="search-main-wrapper">
+        <!-- Search Form -->
+        <section class="search-form">
+          <h2>Find Skills to Learn</h2>
+          <form id="searchForm">
+            <div class="search-input-group">
+              <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search for skills, users, or locations..."
+              />
+              <button type="submit" class="search-btn">Search</button>
+            </div>
 
-    <section class="search-section">
-      <h2>Find Skills to Learn</h2>
-      <input type="text" placeholder="Search for a skill..." name="search" />
-      <button type="submit">Search</button>
-    </section>
+            <!-- Filters -->
+            <div class="filters-section">
+              <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                  <option value="">All Categories</option>
+                  <option value="programming">Programming</option>
+                  <option value="design">Design</option>
+                  <option value="music">Music</option>
+                  <option value="language">Language</option>
+                  <option value="business">Business</option>
+                </select>
+              </div>
 
-    <section class="filters">
-      <h3>Filter by:</h3>
+              <div class="filter-group">
+                <label for="location">Location</label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  placeholder="Enter location"
+                />
+              </div>
 
-      <label for="category">Category:</label>
-      <select id="category">
-        <option value="all">All</option>
-        <option value="languages">Languages</option>
-        <option value="coding">Coding</option>
-        <option value="music">Music</option>
-      </select>
+              <div class="filter-group">
+                <label for="skillLevel">Skill Level</label>
+                <select id="skillLevel" name="skillLevel">
+                  <option value="">Any Level</option>
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                </select>
+              </div>
 
-      <label for="location">Location:</label>
-      <input type="text" id="location" placeholder="Enter city or online" />
+              <div class="filter-group">
+                <label for="sortBy">Sort By</label>
+                <select id="sortBy" name="sortBy">
+                  <option value="relevance">Relevance</option>
+                  <option value="rating">Highest Rated</option>
+                  <option value="newest">Newest</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </section>
 
-      <label for="skill-level">Skill Level:</label>
-      <select id="skill-level">
-        <option value="beginner">Beginner</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="advanced">Advanced</option>
-      </select>
+        <!-- Search Results -->
+        <section id="searchResults" class="search-results">
+          <!-- Results will be dynamically populated by JavaScript -->
+        </section>
 
-      <label for="sort-by">Sort by:</label>
-      <select id="sort-by">
-        <option value="relevance">Relevance</option>
-        <option value="date">Newest</option>
-        <option value="rating">Highest Rated</option>
-      </select>
-
-      <button type="submit">Apply Filters</button>
-    </section>
-
-    <br /><br />
-
-    <section class="search-results">
-      <h2>Search Results</h2>
-
-      <div class="result-item">
-        <img src="user1.jpg" alt="User 1 Profile Picture" width="50" />
-        <p><strong>John Doe</strong> - Offers: <em>Spanish Tutoring</em></p>
-        <p>Skill Level: Intermediate | Rating: ⭐⭐⭐⭐☆</p>
-        <button>View Profile</button>
-        <button>Request Exchange</button>
+        <!-- Load More Button -->
+        <button id="loadMoreBtn" class="load-more">Load More Results</button>
       </div>
+    </main>
 
-      <div class="result-item">
-        <img src="user2.jpg" alt="User 2 Profile Picture" width="50" />
-        <p><strong>Jane Smith</strong> - Offers: <em>Python Programming</em></p>
-        <p>Skill Level: Advanced | Rating: ⭐⭐⭐⭐⭐</p>
-        <button>View Profile</button>
-        <button>Request Exchange</button>
-      </div>
-
-      <button>Load More Results</button>
-    </section>
-
-    <br />
-
-    <!-- CTA Section -->
-    <section class="cta">
-      <h3>Can't find what you're looking for?</h3>
-      <p>Create your own listing and find a match!</p>
-      <button>Create a Listing</button>
-    </section>
-
-    <br /><br />
-
+    <!-- Footer (Unified) -->
     <footer>
-      <hr />
-      <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
-      <p>
-        Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
-        <a href="#">Instagram</a>
-      </p>
-      <hr />
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>QPQ</h4>
+          <p>Empowering people to share knowledge and skills worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon twitter">Twitter</a>
+            <a href="#" class="social-icon facebook">Facebook</a>
+            <a href="#" class="social-icon instagram">Instagram</a>
+            <a href="#" class="social-icon linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
   </body>
 </html>

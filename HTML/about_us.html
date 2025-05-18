@@ -1,64 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Quid Pro Quo</title>
-    <!--<link rel="stylesheet" href="style.css" />-->   
-</head>
-<body>
-    <nav class="navbar">
-      <h1>Logo</h1>
-      <input type="text" placeholder="Search..." />
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="search.html">Search & Listings</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="about_us.html" class="active">About Us</a></li>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="nav-left">
+        <h1 class="logo">QPQ</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Explore</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="about_us.html" class="active">About</a></li>
         </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search skills..."
+            class="Search-Bar"
+          />
+          <button type="button" class="search-button">Search</button>
+        </div>
+        <a href="signup.html" class="Sign-up">Get Started</a>
+      </div>
     </nav>
 
-    <div class="container">
-        <h1>About Quid Pro Quo</h1>
-
-        <section>
-            <h2>Who We Are</h2>
-            <p>Quid Pro Quo is a bartering platform designed to help people exchange goods and services seamlessly. Our goal is to create a fair and efficient marketplace where value is traded directly, without the need for money.</p>
+    <main>
+      <div class="container">
+        <section class="about-hero">
+          <h2>About Quid Pro Quo</h2>
+          <p class="subtitle">
+            Empowering people to share knowledge and skills worldwide
+          </p>
         </section>
 
-        <section>
-            <h2>Our Mission</h2>
-            <p>We believe in the power of exchange. By enabling people to trade skills and items, we promote sustainability, reduce waste, and build stronger communities.</p>
+        <section class="about-section">
+          <h3>Who We Are</h3>
+          <p>
+            Quid Pro Quo is a skill-sharing platform designed to help people
+            exchange knowledge and expertise seamlessly. Our goal is to create a
+            fair and efficient marketplace where skills are traded directly,
+            fostering a community of continuous learning and growth.
+          </p>
         </section>
 
-        <section>
-            <h2>How It Works</h2>
-            <ul>
-                <li><strong>Create a listing:</strong> Describe what you want to offer.</li>
-                <li><strong>Browse trades:</strong> Explore items and skills others are offering.</li>
-                <li><strong>Connect & negotiate:</strong> Find a match and agree on a fair trade.</li>
-                <li><strong>Complete your trade:</strong> Exchange your item or service and leave feedback.</li>
-            </ul>
+        <section class="about-section">
+          <h3>Our Mission</h3>
+          <p>
+            We believe in the power of knowledge exchange. By enabling people to
+            trade skills and expertise, we promote lifelong learning, build
+            stronger communities, and create opportunities for personal and
+            professional growth.
+          </p>
+        </section>
+
+        <section class="about-section">
+          <h3>How It Works</h3>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-icon create-icon"></div>
+              <h4>Create a Profile</h4>
+              <p>Share your skills and what you want to learn</p>
+            </div>
+            <div class="step-card">
+              <div class="step-icon browse-icon"></div>
+              <h4>Browse Skills</h4>
+              <p>Explore skills others are offering to teach</p>
+            </div>
+            <div class="step-card">
+              <div class="step-icon connect-icon"></div>
+              <h4>Connect & Learn</h4>
+              <p>Match with others and arrange skill exchanges</p>
+            </div>
+            <div class="step-card">
+              <div class="step-icon review-icon"></div>
+              <h4>Share Feedback</h4>
+              <p>Rate your experience and help others</p>
+            </div>
+          </div>
         </section>
 
         <section class="cta">
-            <h2>Join the Bartering Revolution!</h2>
-            <p>Sign up today and start trading skills and goods with a global community.</p>
-            <a href="signup.html" class="btn">Get Started</a>
+          <div class="cta-content">
+            <h3>Join Our Learning Community</h3>
+            <p>Start your journey of skill exchange today</p>
+            <a href="signup.html" class="btn primary">Get Started</a>
+          </div>
+          <div class="cta-pattern"></div>
         </section>
-    </div>
+      </div>
+    </main>
 
     <footer>
-        <hr>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>QPQ</h4>
+          <p>Empowering people to share knowledge and skills worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon twitter">Twitter</a>
+            <a href="#" class="social-icon facebook">Facebook</a>
+            <a href="#" class="social-icon instagram">Instagram</a>
+            <a href="#" class="social-icon linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
-        <p>Follow us on: 
-            <a href="#">Facebook</a> | 
-            <a href="#">Twitter</a> | 
-            <a href="#">Instagram</a>
-        </p>
-        <hr>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
-

@@ -4,77 +4,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quid Pro Quo - Skill Bartering</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
     <nav class="header">
-      <h1>Logo</h1>
-
-      <input
-        type="text"
-        placeholder="Search for New Skills"
-        class="Search-Bar"
-      />
-
-      <div class="Sign-Up-Buttons">
-        <a href="signup.html">
-          <button class="Sign-up">Sign Up | Log In</button>
-        </a>
-        <!-- <a href="help_page.html"> <button class="Help">?</button> </a> -->
+      <div class="nav-left">
+        <h1 class="logo">QPQ</h1>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="search.html">Explore</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="about_us.html">About</a></li>
+        </ul>
       </div>
-
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="search.html">Search & Listings</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-      </ul>
+      <div class="nav-right">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search skills..."
+            class="Search-Bar"
+          />
+          <button type="button" class="search-button">Search</button>
+        </div>
+        <a href="signup.html" class="Sign-up">Get Started</a>
+      </div>
     </nav>
 
-    <section class="hero">
-      <h2>Barter Skills, Learn for Free!</h2>
-      <p>Exchange your skills with others and grow together.</p>
-      <a href="search.html" class="btn">Browse Skills</a> <br />
-      <a href="how_it_works.html" class="btn">How It Works?</a>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Share Knowledge,<br />Grow Together</h2>
+          <p>
+            Join our community of learners and teachers. Exchange skills, make
+            connections, and learn something new every day.
+          </p>
+          <div class="hero-buttons">
+            <a href="search.html" class="btn primary">Start Learning →</a>
+            <a href="about_us.html" class="btn secondary">How It Works</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">10K+</span>
+              <span class="stat-label">Active Users</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Skills Available</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15K+</span>
+              <span class="stat-label">Exchanges Made</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-images">
+          <div class="feature-card teaching">
+            <div class="card-image teaching-image"></div>
+            <span class="card-label">Teaching</span>
+          </div>
+          <div class="feature-card learning">
+            <div class="card-image learning-image"></div>
+            <span class="card-label">Learning</span>
+          </div>
+        </div>
+      </section>
 
-    <section class="popular-skills">
-      <h3>Popular Skills Right Now</h3>
-      <ul>
-        <li>🎸 Guitar Lessons</li>
-        <li>💻 Web Development</li>
-        <li>🗣️ Spanish Language</li>
-        <li>📷 Photography Basics</li>
-        <li>🧘‍♂️ Yoga & Meditation</li>
-      </ul>
-      <a href="search.html" class="btn">View More</a>
-    </section>
+      <section class="popular-skills">
+        <div class="section-header">
+          <h3>Trending Skills</h3>
+          <a href="search.html" class="view-all">View All →</a>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon code-icon"></div>
+            <h4>Web Development</h4>
+            <p>Learn to build modern websites</p>
+            <span class="skill-meta">2.5k learners</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon language-icon"></div>
+            <h4>Language Exchange</h4>
+            <p>Practice with native speakers</p>
+            <span class="skill-meta">1.8k learners</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon camera-icon"></div>
+            <h4>Photography</h4>
+            <p>Master your camera skills</p>
+            <span class="skill-meta">1.2k learners</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon music-icon"></div>
+            <h4>Music Production</h4>
+            <p>Create your own tracks</p>
+            <span class="skill-meta">950 learners</span>
+          </div>
+        </div>
+      </section>
 
-    <section class="testimonials">
-      <h3>What Our Users Say</h3>
-      <blockquote>
-        “I found a great mentor to teach me Python while I taught them guitar.
-        Best experience ever!” – Alex J.
-      </blockquote>
-      <blockquote>
-        “Quid Pro Quo made it easy to exchange skills. I learned Spanish while
-        teaching English!” – Maria L.
-      </blockquote>
-    </section>
+      <section class="testimonials">
+        <div class="section-header">
+          <h3>Success Stories</h3>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "I learned Spanish while teaching photography. The platform made
+                it so easy to connect and schedule sessions!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image sarah"></div>
+              <div class="author-info">
+                <h4>Sarah M.</h4>
+                <p>Photography Expert</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "Found an amazing mentor for web development. Now I'm building
+                websites professionally!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image david"></div>
+              <div class="author-info">
+                <h4>David R.</h4>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="cta">
-      <h3>Join the Community!</h3>
-      <p>Start bartering skills today and connect with learners worldwide.</p>
-      <a href="signup.html" class="btn">Sign Up Now</a>
-    </section>
+      <section class="cta">
+        <div class="cta-content">
+          <h3>Ready to Start Your Learning Journey?</h3>
+          <p>
+            Join thousands of people who are already sharing skills and growing
+            together.
+          </p>
+          <a href="signup.html" class="btn primary">Join Now →</a>
+        </div>
+        <div class="cta-pattern"></div>
+      </section>
+    </main>
 
     <footer>
-      <hr />
-      <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
-      <p>
-        Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
-        <a href="#">Instagram</a>
-      </p>
-      <hr />
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>QPQ</h4>
+          <p>Empowering people to share knowledge and skills worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon twitter">Twitter</a>
+            <a href="#" class="social-icon facebook">Facebook</a>
+            <a href="#" class="social-icon instagram">Instagram</a>
+            <a href="#" class="social-icon linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>

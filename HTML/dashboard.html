@@ -1,114 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quid Pro Quo Dashboard</title>
-</head>
-<body>
-  <h1>Logo</h1>
-  <nav class="navbar">
-    <input type="text" placeholder="Search..." />
-    <li><a href="index.html"> Home </a></li>
-    <li><a href="search.html"> Search & Listings </a></li>
-    <li><a href="#"> Dashboard </a></li>
-    <li><a href="about_us.html"> About Us </a></li>
-  </nav>
-
-    <header>
-        <h1>Welcome, [Username]</h1>
-        <nav>
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#active-exchanges">Active Exchanges</a></li>
-                <li><a href="#offered-skills">My Offered Skills</a></li>
-                <li><a href="#requested-skills">My Requested Skills</a></li>
-                <li><a href="#messages">Messages</a></li>
-                <li><a href="#settings">Settings</a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QPQ - Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="nav-left">
+        <h1 class="logo">QPQ</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Explore</a></li>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+          <li><a href="about_us.html">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search skills..."
+            class="Search-Bar"
+          />
+          <button type="button" class="search-button">Search</button>
+        </div>
+        <div class="user-menu">
+          <img src="../Images/david.jpeg" alt="Profile" class="user-avatar" />
+          <span class="user-name">John Doe</span>
+        </div>
+      </div>
+    </nav>
 
     <main>
-        <section id="overview">
-            <h2>Dashboard Overview</h2>
-            <div class="stats">
-                <p>Skills Offered: <span id="skills-offered">3</span></p>
-                <p>Skills Requested: <span id="skills-requested">2</span></p>
-                <p>Active Exchanges: <span id="active-exchanges-count">1</span></p>
-                <p>Completed Trades: <span id="completed-trades">5</span></p>
-                <p>User Reputation: <span id="user-rating">4.8/5</span></p>
+      <div class="dashboard-grid">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="../Images/david.jpeg"
+                alt="John Doe"
+                class="profile-image"
+              />
+              <div class="profile-info">
+                <h2>John Doe</h2>
+                <p class="profile-location">London, UK</p>
+                <div class="profile-rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-count">(32 reviews)</span>
+                </div>
+              </div>
             </div>
-        </section>
-
-        <section id="active-exchanges">
-            <h2>Active Skill Exchanges</h2>
-
-            <div class="pending-requests">
-                <h3>Pending Requests</h3>
-                <ul>
-                    <li>John Doe wants to trade ""Guitar Lessons""" for ""Graphic Design Help"""
-                        <button>Accept</button> <button>Decline</button>
-                    </li>
-                    <li>Jane Smith requests ""Language Exchange (Spanish-English)""
-                        <button>Accept</button> <button>Decline</button>
-                    </li>
-                </ul>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-value">24</span>
+                <span class="stat-label">Skills Shared</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">156</span>
+                <span class="stat-label">Hours Taught</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">18</span>
+                <span class="stat-label">Skills Learned</span>
+              </div>
             </div>
+            <button class="btn primary full-width">Edit Profile</button>
+          </div>
 
-            <div class="ongoing-exchanges">
-                <h3>Ongoing Exchanges</h3>
-                <ul>
-                    <li>""Coding Lessons for Marketing Help""" (50% completed)</li>
-                    <li>""Yoga Sessions for Photography Tips""" (In Progress)</li>
-                </ul>
+          <nav class="dashboard-nav">
+            <a href="#overview" class="nav-item active">
+              <span class="nav-icon overview"></span>
+              Overview
+            </a>
+            <a href="#my-skills" class="nav-item">
+              <span class="nav-icon skills"></span>
+              My Skills
+            </a>
+            <a href="#exchanges" class="nav-item">
+              <span class="nav-icon exchanges"></span>
+              Exchanges
+            </a>
+            <a href="#messages" class="nav-item">
+              <span class="nav-icon messages"></span>
+              Messages
+            </a>
+            <a href="#settings" class="nav-item">
+              <span class="nav-icon settings"></span>
+              Settings
+            </a>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-content">
+          <section class="dashboard-welcome">
+            <h1>Welcome back, John! 👋</h1>
+            <p>Here's what's happening with your skill exchanges</p>
+          </section>
+
+          <section class="quick-stats">
+            <div class="stat-card">
+              <div class="stat-icon pending"></div>
+              <div class="stat-details">
+                <h3>5</h3>
+                <p>Pending Requests</p>
+              </div>
             </div>
-        </section>
+            <div class="stat-card">
+              <div class="stat-icon active"></div>
+              <div class="stat-details">
+                <h3>3</h3>
+                <p>Active Exchanges</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon completed"></div>
+              <div class="stat-details">
+                <h3>28</h3>
+                <p>Completed Exchanges</p>
+              </div>
+            </div>
+          </section>
 
-      
-        <section id="offered-skills">
-            <h2>My Offered Skills</h2>
-            <ul>
-                <li>Skill: ""Web Development""" (3 requests pending) 
-                    <button>Edit</button> <button>Remove</button>
-                </li>
-                <li>Skill: ""French Language Tutoring""" (Available) 
-                    <button>Edit</button> <button>Remove</button>
-                </li>
-            </ul>
-            <button>Add New Skill</button>
-        </section>
+          <section class="upcoming-exchanges">
+            <div class="section-header">
+              <h2>Upcoming Exchanges</h2>
+              <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="exchange-cards">
+              <div class="exchange-card">
+                <div class="exchange-header">
+                  <img
+                    src="../Images/sarah.jpg"
+                    alt="Sarah"
+                    class="participant-image"
+                  />
+                  <div class="exchange-info">
+                    <h3>Spanish Conversation Practice</h3>
+                    <p>with Sarah M.</p>
+                    <span class="exchange-time">Today, 3:00 PM</span>
+                  </div>
+                </div>
+                <div class="exchange-actions">
+                  <button class="btn secondary">Join Meeting</button>
+                  <button class="btn primary">Reschedule</button>
+                </div>
+              </div>
 
-        <section id="requested-skills">
-            <h2>My Requested Skills</h2>
-            <ul>
-                <li>Looking for ""Guitar Lessons""" (1 potential match found)</li>
-                <li>Need help with ""Video Editing""" (No matches yet)</li>
-            </ul>
-        </section>
+              <div class="exchange-card">
+                <div class="exchange-header">
+                  <img
+                    src="../Images/sarah.jpg"
+                    alt="Mike R."
+                    class="participant-image"
+                  />
+                  <div class="exchange-info">
+                    <h3>Guitar Basics</h3>
+                    <p>with Mike R.</p>
+                    <span class="exchange-time">Tomorrow, 5:30 PM</span>
+                  </div>
+                </div>
+                <div class="exchange-actions">
+                  <button class="btn secondary">Join Meeting</button>
+                  <button class="btn primary">Reschedule</button>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <section id="messages">
-            <h2>Messages</h2>
-            <ul>
-                <li>John Doe: "Hey, are you still offering web development lessons?" <button>Reply</button></li>
-            </ul>
-        </section>
+          <section class="my-skills-section">
+            <div class="section-header">
+              <h2>My Skills</h2>
+              <button class="btn primary">Add New Skill</button>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card teaching">
+                <div class="skill-header">
+                  <div class="skill-icon code-icon"></div>
+                  <span class="skill-type teaching">Teaching</span>
+                </div>
+                <h3>Web Development</h3>
+                <p>React, Node.js, Full-stack development</p>
+                <div class="skill-meta">
+                  <span class="skill-level">Advanced</span>
+                  <span class="exchange-count">15 exchanges</span>
+                </div>
+              </div>
 
-        <section id="settings">
-            <h2>Profile & Settings</h2>
-            <p>Username: [Your Name]</p>
-            <a href="profile.html"> <button >Edit Profile</button> </a>
-            <h3>Preferences</h3>
-            <label>
-                <input type="checkbox" checked> Receive Notifications
-            </label>
-        </section>
-
+              <div class="skill-card learning">
+                <div class="skill-header">
+                  <div class="skill-icon language-icon"></div>
+                  <span class="skill-type learning">Learning</span>
+                </div>
+                <h3>Spanish Language</h3>
+                <p>Conversational Spanish, Business Spanish</p>
+                <div class="skill-meta">
+                  <span class="skill-level">Intermediate</span>
+                  <span class="exchange-count">8 exchanges</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <p>Quid Pro Quo © 2025. All Rights Reserved.</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>QPQ</h4>
+          <p>Empowering people to share knowledge and skills worldwide.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon twitter">Twitter</a>
+            <a href="#" class="social-icon facebook">Facebook</a>
+            <a href="#" class="social-icon instagram">Instagram</a>
+            <a href="#" class="social-icon linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Quid Pro Quo. All rights reserved.</p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
